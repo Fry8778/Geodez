@@ -1,0 +1,45 @@
+.logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--logo-black-color);
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+}
+
+.logo__label {
+    color: var(--accent-color);
+}
+
+.logo-down {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.down-white {
+    color: var(--primery-white-color);
+    transition: color var(--transition);
+
+
+    
+    .logo-down:hover  &,
+    .logo-down:focus  &{
+        color: var(--accent-color);
+    }
+}

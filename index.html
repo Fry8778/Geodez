@@ -4,162 +4,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geodez</title>
+    <title>GeoDez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Whisper&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/tah_color.png">
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
+        <div class="container nav__container">
             <a href="./index.html" class="logo">
-                <span class="logo__lable">Geo</span>Dez
+                <span class="logo__label">Geo</span>Dez
             </a>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#Geodesy-for-you" >
-                            Геодезія та геологія                            
+                        <a href="#Geodesy-for-you" class="nav__link">
+                            Геодезія та геологія
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#Geodesy-our-features">
-                        Наші переваги
-                    </a>
-                </li>
-                    <li class="nav__item">
-                        <a href="#Geodesy-our-services">
-                        Послуги та прайс
+                        <a href="#Geodesy-our-features" class="nav__link">
+                            Наші переваги
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#Geodesy-contacts">
-                        Контакти
+                        <a href="#Geodesy-our-services" class="nav__link">
+                            Послуги та прайс
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#Geodesy-contacts" class="nav__link">
+                            Контакти
                         </a>
                     </li>
                 </ul>
             </nav>
             <ul class="contacts">
-                <li class=" contacts__item"></li>
-                <a href="mailto:den@klinch.ua" class="contacts__link">den@klinch.ua</a>
-                <li class=" contacts__item"></li>
-                <a href="tel.+380663790565" class="contacts__link">+38 066 379 05 65</a>
+                <li class="contacts__item">
+                    <a href="mailto:den@klinch.ua" class="contacts__link__top"><svg class="contacts__icon" width="16" height="12">
+                        <use href="./images/sprite.svg#icon-envelop"></use>
+                        </svg>den@klinch.ua</a>
+                </li>
+                <li class="contacts__item">
+                    <a href="tel.+380663790565" class="contacts__link__top"><svg class="contacts__icon" width="10" height="16">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>+38(066) 379 05 65</a>
+                </li>
             </ul>
         </div>
     </header>
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container" id="Geodesy-for-you">
-            <h1 class="hero-title">
-                Геодезія та геологія <br />
-                для Вашого успіху
-            </h1>
-        </div>
-    </section>
-    <!-- About us -->
-    <section class="about">
-        <div class="container">
-            <h2 class="about__us"></h2>
-            <p class=" about__us__text">Наша динамічна компанія, що спеціалізується на виконанні робіт з геології та
-                геодезії, забезпечує високоякісні послуги для різноманітних проектів. Використовуючи передові технології
-                та кваліфікованих фахівців, ми проводимо геологічні дослідження та геодезичні вимірювання, гарантуючи
-                точні дані для будівельних та інженерних проектів. Наш колектив відрізняється високою якістю виконання
-                завдань та своєчасним наданням повної інформації, необхідної для прийняття обґрунтованих рішень. Ми
-                завжди готові до викликів у сфері геологічних та топографічних робіт, надаючи найвищий рівень
-                професійних послуг та сприяючи успішному втіленню проектів клієнтів.</p>
-        </div>
-    </section>
-    <!-- Features -->
-    <section class="features">
-        <div class="container" id="Geodesy-our-features">
-            <h2 class="our__features">Наші переваги</h2>
-            <ul class="features__list">
-                <li class="card_item"></li>
-                <h3 class="features__title">Високий професіоналізм</h3>
-                <p class="features__text">Наш колектив експертів володіє широким спектром знань у галузі геологічних та
-                    топографічних досліджень. Висока кваліфікація наших фахівців гарантує надійні та точні результати
-                    робіт. Ми впевнені в якості наших послуг, що завжди відповідає найвищим стандартам.</p>
-                <li class="card_item"></li>
-                <h3 class="features__title">Сучасне обладнання</h3>
-                <p class="features__text">Наша компанія інвестує в сучасне топографічне та геологічне обладнання, що
-                    дозволяє забезпечити найточніші вимірювання та високоякісні дослідження. Ми використовуємо передові
-                    технології для забезпечення точності та ефективності усіх проектів.</p>
-                <li class="card_item"></li>
-                <h3 class="features__title">Індивідуальний підхід</h3>
-                <p class="features__text">Ми розуміємо, що кожен проект унікальний. Наші фахівці працюють з клієнтами,
-                    враховуючи їхні потреби та особливості проекту. Ми пропонуємо індивідуальні рішення, які
-                    відповідають конкретним вимогам та гарантують успішне виконання завдань.</p>
-            </ul>
-        </div>
-    </section>
-    <!-- Services -->
-    <section class="services">
-        <div class="container" id="Geodesy-our-services">
-            <h2 class="our__servises">Послуги та прайс</h2>
-            <table class="table__services">
-                <tr>
-                    <td>Геодезичні та геологічні роботи</td>
-                    <td>Ціна (грн)</td>
-                </tr>
-                <tr>
-                    <td>Розбивка осей будівлі</td>
-                    <td>1600</td>
-                </tr>
-                <tr>
-                    <td>Винесення кордонів земельної ділянки</td>
-                    <td>1500</td>
-                </tr>
-                <tr>
-                    <td>Топозйомка 1:500</td>
-                    <td>2000</td>
-                </tr>
-                <tr>
-                    <td>1 ГА топозйомка 1:500 (не забудована) </td>
-                    <td>1000</td>
-                </tr>
-                <tr>
-                    <td>1 ГА топозйомка 1:500 (промислова зона)</td>
-                    <td>4500</td>
-                </tr>
-                <tr>
-                    <td>1 км топозйомка для лінійних споруд</td>
-                    <td>4000</td>
-                </tr>              
-                <tr>
-                    <td>Геологія ділянки під <br />
-                        розміщення приватного житлового будинку</td>
-                    <td>від 5000</td>
-                </tr>
-                <tr>
-                    <td>Геологія ділянки промислового призначення</td>
-                    <td>від 10000</td>
-                </tr>
-            </table>
-        </div>
-    </section>
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container" id="Geodesy-for-you">
+                <h1 class="hero-title">
+                    Геологія та геодезія <br />
+                    для Вашого успіху
+                </h1>
+            </div>
+        </section>
+        <!-- About us -->
+        <section class="about">
+            <div class="container about_company">
+                <div class="about__us">
+                    <h2 class="about__us__title">Про нас</h2>
+                    <p class=" about__us__text">Наша динамічна компанія, що спеціалізується на виконанні робіт з
+                        геології та
+                        геодезії, забезпечує високоякісні послуги для різноманітних проектів. Використовуючи передові
+                        технології
+                        та кваліфікованих фахівців, ми проводимо геологічні дослідження та геодезичні вимірювання,
+                        гарантуючи
+                        точні дані для будівельних та інженерних проектів. Наш колектив відрізняється високою якістю
+                        виконання
+                        завдань та своєчасним наданням повної інформації, необхідної для прийняття обґрунтованих рішень.
+                        Ми
+                        завжди готові до викликів у сфері геологічних та топографічних робіт, надаючи найвищий рівень
+                        професійних послуг та сприяючи успішному втіленню проектів клієнтів.</p>
+                </div>
+                <picture class="geodesy__KFS">
+                    <source srcset="
+                        ./images/about_us-desk1x.jpg 1x,
+                        ./images/about_us-desk2x.jpg 2x
+                    " media="(min-width:1200px)" type="image/jpeg" />
+                    <source srcset="
+                        ./images/about_us-desk1x.jpg 1x,
+                        ./images/about_us-desk2x.jpg 2x
+                    " media="(min-width:768px)" type="image/jpeg" />
+                    <source srcset="
+                        ./images/about_us-desk1x.jpg 1x,
+                        ./images/about_us-desk2x.jpg 2x
+                        " media="(min-width767px)" type="image/jpeg" />
+                    <img src="./images/about_us-desk1x.jpg" alt="Geodesy at KFS" width="370" height="294" />
+                </picture>
+            </div>
+        </section>
+        <!-- Features -->
+        <section class="features">
+            <div class="container" id="Geodesy-our-features">
+                <h2 class="our__features">Наші переваги</h2>
+                <ul class="features__list">
+                    <li class="card_item"></li>
+                    <h3 class="features__title">Високий професіоналізм</h3>
+                    <p class="features__text">Наш колектив експертів володіє широким спектром знань у галузі геологічних
+                        та
+                        топографічних досліджень. Висока кваліфікація наших фахівців гарантує надійні та точні
+                        результати
+                        робіт. Ми впевнені в якості наших послуг, що завжди відповідає найвищим стандартам.</p>
+                    <li class="card_item"></li>
+                    <h3 class="features__title">Сучасне обладнання</h3>
+                    <p class="features__text">Наша компанія інвестує в сучасне топографічне та геологічне обладнання, що
+                        дозволяє забезпечити найточніші вимірювання та високоякісні дослідження. Ми використовуємо
+                        передові
+                        технології для забезпечення точності та ефективності усіх проектів.</p>
+                    <li class="card_item"></li>
+                    <h3 class="features__title">Індивідуальний підхід</h3>
+                    <p class="features__text">Ми розуміємо, що кожен проект унікальний. Наші фахівці працюють з
+                        клієнтами,
+                        враховуючи їхні потреби та особливості проекту. Ми пропонуємо індивідуальні рішення, які
+                        відповідають конкретним вимогам та гарантують успішне виконання завдань.</p>
+                </ul>
+            </div>
+        </section>
+        <!-- Services -->
+        <section class="services">
+            <div class="container" id="Geodesy-our-services">
+                <h2 class="our__servises">Послуги та прайс</h2>
+                <table class="table__services">
+                    <tr>
+                        <td>Геодезичні та геологічні роботи</td>
+                        <td>Ціна (грн)</td>
+                    </tr>
+                    <tr>
+                        <td>Розбивка осей будівлі</td>
+                        <td>1600</td>
+                    </tr>
+                    <tr>
+                        <td>Винесення кордонів земельної ділянки</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <td>Топозйомка 1:500</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>1 ГА топозйомка 1:500 (не забудована) </td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>1 ГА топозйомка 1:500 (промислова зона)</td>
+                        <td>4500</td>
+                    </tr>
+                    <tr>
+                        <td>1 км топозйомка для лінійних споруд</td>
+                        <td>4000</td>
+                    </tr>
+                    <tr>
+                        <td>Геологія ділянки під <br />
+                            розміщення приватного житлового будинку</td>
+                        <td>від 5000</td>
+                    </tr>
+                    <tr>
+                        <td>Геологія ділянки промислового призначення</td>
+                        <td>від 10000</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer__container" id="Geodesy-contacts">
             <a href="./index.html" class="logo-down">Geo<span class="down-white">Dez</span></a>
             <address class="footer-address">
-              <ul class="bottom list">
-                <li class="bottom-box">
-                  <a href="г.Киев,пр-тЛесиУкраинки,26" class="link town">м. Дніпро, вулиця Січеславська Набережна, 29А</a>
-                </li>
-                <li class="bottom-box">
-                    <a href="mailto:den@klinch.ua" class="contacts__link">den@klinch.ua</a>
-                </li>
-                <li class="bottom-box">
-                    <a href="tel.+380663790565" class="contacts__link">+38 066 379 05 65</a>
-                </li>
-              </ul>
+                <ul class="bottom list">
+                    <li class="bottom-box">
+                        <a href="г.Киев,пр-тЛесиУкраинки,26" class="link town">м. Дніпро, вулиця Січеславська Набережна,
+                            29А</a>
+                    </li>
+                    <li class="bottom-box">
+                        <a href="mailto:den@klinch.ua" class="contacts__link">den@klinch.ua</a>
+                    </li>
+                    <li class="bottom-box">
+                        <a href="tel.+380663790565" class="contacts__link">+38 066 379 05 65</a>
+                    </li>
+                </ul>
             </address>
 
         </div>
-        
+
 
     </footer>
 
 
 </body>
+
 </html>

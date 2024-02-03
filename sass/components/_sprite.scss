@@ -1,0 +1,23 @@
+.contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+
+}
+
+.contacts__icon {
+
+    margin-right: 10px;
+    fill: currentColor;
+
+}
+
+.icon {
+    fill: var(--icon-fill);
+    transition: fill var(--transition);
+
+    &:hover,
+    &:focus {
+        fill: var(--primery-white-color)
+    }
+
+}

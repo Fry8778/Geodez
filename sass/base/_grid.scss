@@ -1,0 +1,39 @@
+.nav__container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100px 2fr 1fr;
+    align-items: center;
+}
+
+
+.nav__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    // margin-left: 100px;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );   
+}
+
+.about_company{
+    display: grid;
+    // grid-template-columns: [about_company] 3fr [geodesy__KFS] 1fr;
+    grid-template-columns: 250px 1fr;
+    grid-column-gap: 50px;  
+    margin-left: 137px;
+}
+.geodesy__KFS {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.about__us{
+    display: grid;  
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+}

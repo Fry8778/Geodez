@@ -1,0 +1,120 @@
+.nav {
+
+    @include mq(mob-only) {
+        display: none;
+    }
+
+
+}
+
+.nav__link--current {
+    color: currentColor;
+}
+
+.nav__list {
+    display: flex;
+    margin-left: 92px;
+
+
+    & .nav__item:not(:last-child) {
+        margin-right: 50px;
+
+    }
+
+    & .nav__link:hover,
+    & .nav__link:focus {
+        color: var(--accent-color);
+
+    }
+
+    & .nav__link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--title-text-color);
+        transition: color var(--transition);
+
+        &.nav__link--current {
+            color: var(--accent-color);
+            position: relative;
+
+
+
+        }
+
+        &.nav__link--current::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: var(--accent-color);
+            bottom: -3px;
+            border-radius: 2px;
+
+        }
+    }
+
+}
+
+
+/*Auth-nav*/
+
+.contacts {
+
+    @include mq(mob-only) {
+        display: none;
+    }
+
+    @include mq(tab-only) {
+        display: block;
+    }
+
+
+    // display: flex;
+    // margin-left: auto;
+
+
+    &__item {
+        &:not(:last-child) {
+
+            @include mq(tab-only) {
+                margin-bottom: 10px;
+            }
+
+            @include mq(desk) {
+                margin-right: 50px;
+            }
+        }
+
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--primery-text-color);
+        transition: color var(--transition);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+
+        }
+
+        @include mq(desk) {
+            font-size: 14px;
+        }
+    }
+
+}
