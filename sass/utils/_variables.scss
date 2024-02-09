@@ -1,35 +1,38 @@
-:root{
-    --secondary-font-family: "Raleway";
-    --primery-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196F3;
-    --primery-white-color: #FFFFFF;
-    --border-icon-color: #AFB1B8;
-    --background-color: #F5F4FA;
-    --logo-black-color: #000000;
-    --staff-color: #EEEEEE;
-    --header-border-color: #ECECEC;
-    --foter-background-color: #2F303A;
-    --backdrop-background-color: rgba(0, 0, 0, 0.2);
-    --transparent-color: rgba(255, 255, 255, 0.6);
-    --filter-btn-box-shadow-color: 0px 3px 1px rgba(0, 0, 0, 0.1),
-            0px 1px 2px rgba(0, 0, 0, 0.08),
-            0px 2px 2px rgba(0, 0, 0, 0.12);
-    --box-shadow-color: 0px 1px 1px rgba(0, 0, 0, 0.12),
-            0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-    --staff-box-shadow-color: 0px 1px 3px rgba(0, 0, 0, 0.12),
-            0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
-    --button-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    --button-background-color: #188CE8;
-    --staff-background-color: rgba(255, 255, 255, 0.1); 
-    --portfolio-txt-background-color: rgba(33, 150, 243, 0.9);
-    --form-input-border: #e5e5e5;
-    --icon-fill: #AFB1B8;
-    --placeholder-color: rgba(117, 117, 117, 0.5);
-    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    --card-item: 1;
-    --card-left: 30px;
-    --card-top: 30px;
+:root {
+        --secondary-font-family: "Raleway";
+        --primery-text-color: #757575;
+        --title-text-color: #212121;
+        --accent-color: #2196F3;
+        --table-background-color: #b1daea;
+        --second-table-background-color: #dae5ea;
+        --link-top-color: #ffbf00;
+        --primery-white-color: #FFFFFF;
+        --border-icon-color: #AFB1B8;
+        --background-color: #F5F4FA;
+        --logo-black-color: #000000;
+        --staff-color: #EEEEEE;
+        --header-border-color: #ECECEC;
+        --foter-background-color: #2F303A;
+        --backdrop-background-color: rgba(0, 0, 0, 0.2);
+        --transparent-color: rgba(255, 255, 255, 0.6);
+        --filter-btn-box-shadow-color: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        --box-shadow-color: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        --staff-box-shadow-color: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+        --button-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        --button-background-color: #188CE8;
+        --staff-background-color: rgba(255, 255, 255, 0.1);
+        --portfolio-txt-background-color: rgba(33, 150, 243, 0.9);
+        --form-input-border: #e5e5e5;
+        --icon-fill: #AFB1B8;
+        --placeholder-color: rgba(117, 117, 117, 0.5);
+        --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        --card-item: 1;
+        --card-left: 30px;
+        --card-top: 30px;
 }

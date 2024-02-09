@@ -1,16 +1,26 @@
-@import './layout/hero';
-@import './layout/header';
-@import './utils/variables';
-@import './components/logo';
-@import './base/container';
-@import './base/grid';
 @import './base/common';
+@import './base/container';
 @import './base/reset';
 @import './base/section';
-@import './layout/about';
-@import './utils/mixin';
+@import './components/logo';
 @import './components/navigation';
-@import './components/sprite';
+@import './layout/about';
+@import './layout/features';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/services';
+@import './utils/mixin';
+@import './utils/variables';
+
+
+
+
+
+
+
+
+
 
 
 

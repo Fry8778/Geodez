@@ -1,4 +1,4 @@
-.logo {
+.logo {   
     padding-top: 26px;
     padding-bottom: 26px;
 
@@ -23,6 +23,9 @@
 }
 
 .logo-down {
+    display: flex;
+    margin-bottom: 20px;
+    // padding: 10px 20px;
     font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 28px;

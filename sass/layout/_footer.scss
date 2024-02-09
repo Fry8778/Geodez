@@ -1,0 +1,262 @@
+// .footer-container {
+//   display: flex;
+
+//   @include mq(no-desk) {
+//     align-items: center;
+//     flex-direction: column;
+//     text-align: center;
+
+//   }
+
+//   @include mq(desk) {
+//     align-items: baseline;
+//   }
+
+// }
+
+// .footer-wrapper {
+//   width: 100%;
+
+//   @include mq(no-desk) {
+//     margin-bottom: 60px;
+
+
+//   }
+
+//   @include mq(tab) {
+//     display: flex;
+//     align-items: baseline;
+//   }
+
+//   @include mq(desk) {
+//     margin-right: 70px;
+//   }
+// }
+
+// .footer-item {
+//   width: 100%;
+
+//   &:not(:last-child) {
+//     @include mq(mob-only) {
+//       margin-bottom: 60px;
+
+//     }
+
+//     @include mq(desk) {
+//       margin-right: 70px;
+
+//     }
+//   }
+
+//   &:last-child {
+//     @include mq(desk) {
+//       margin-left: auto;
+
+//     }
+
+//   }
+// }
+
+.icon-foot {
+  fill: var(--primery-white-color);
+}
+
+// .join {
+//   .social-media {
+//     @include mq(desk) {
+//       justify-content: flex-start;
+//     }
+//   }
+
+// }
+
+.footer-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+  margin-bottom: 20px;
+}
+
+.footer {
+  // display: grid;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // margin-left: auto;
+  background-color: var(--foter-background-color);
+}
+
+.footer-address {
+  // margin-top: 20px;
+}
+
+
+
+.bottom-box:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+// .work-box:not(:last-child) {
+//   margin-bottom: 10px;
+// }
+
+
+
+
+
+.bottom {
+  .link__footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--transparent-color);
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+}
+
+.town {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--transparent-color);
+}
+
+.contacts__box {
+  font-style: normal;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.footer__container {
+  display: grid;
+  // grid-template-columns: 200px 350px 300px 300px;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr;
+}
+
+.footer__item {
+  width: 100%;
+}
+
+
+
+.join {
+  // display: grid;
+  // grid-gap:5px;
+  // height: 100%;
+  // // grid-template-columns: (3, 1fr);
+  // // grid-template-rows: (3, 1fr);
+  // // grid-auto-flow: row;
+}
+
+
+
+.social-media {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+
+  // display: grid;
+  // align-items: start;
+  // justify-items: start;
+
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+
+
+
+.social-item {
+  // display: grid;
+  // grid-gap:5px;
+  // height: 100vh;
+  // grid-template-columns: (3, 1fr);
+  // grid-template-rows: (3, 1fr);
+  // grid-auto-flow: row;
+
+  // align-items: start;
+  // justify-items: start; 
+
+}
+
+.social-link {
+  // display: grid;
+  // align-self: start;
+  // justify-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--staff-background-color);
+  transition: background var(--transition);
+
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+  }
+
+  &:hover .icon,
+  &:focus .icon {
+    fill: var(--primery-white-color)
+  }
+
+}
+
+.icon {
+  fill: var(--icon-fill);
+  transition: fill var(--transition);
+
+  &:hover,
+  &:focus {
+    fill: var(--primery-white-color)
+  }
+
+}
+
+.work__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--transparent-color);
+  transition: color var(--transition);
+
+}
+
+.slogan__text {
+  // margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--transparent-color);
+  transition: color var(--transition);
+
+  &__:not(:last-child) {
+    margin-bottom: 10px;
+
+  }
+}

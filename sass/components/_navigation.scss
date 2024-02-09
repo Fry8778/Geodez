@@ -1,11 +1,11 @@
-.nav {
+// .nav {
 
-    @include mq(mob-only) {
-        display: none;
-    }
+//     @include mq(mob-only) {
+//         display: none;
+//     }
 
 
-}
+// }
 
 .nav__link--current {
     color: currentColor;
@@ -64,42 +64,44 @@
 }
 
 
-/*Auth-nav*/
+
+
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 .contacts {
 
-    @include mq(mob-only) {
-        display: none;
-    }
+    // @include mq(mob-only) {
+    //     display: none;
+    // }
 
-    @include mq(tab-only) {
-        display: block;
-    }
+    // @include mq(tab-only) {
+    //     display: block;
+    // }  
 
-
-    // display: flex;
-    // margin-left: auto;
-
-
+    
     &__item {
         &:not(:last-child) {
 
-            @include mq(tab-only) {
-                margin-bottom: 10px;
-            }
+            // @include mq(tab-only) {
+            //     margin-bottom: 10px;
+            // }
 
-            @include mq(desk) {
-                margin-right: 50px;
-            }
+            // @include mq(desk) {
+            //     margin-right: 50px;
+            // }
         }
 
     }
 
-    &__link {
-        display: flex;
+    &__link__top {
+        // display: flex;
         align-items: center;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         text-decoration: none;
@@ -108,13 +110,51 @@
 
         &:hover,
         &:focus {
-            color: var(--accent-color);
+            color: var(--link-top-color);
 
         }
 
-        @include mq(desk) {
-            font-size: 14px;
-        }
+        // @include mq(desk) {
+        //     font-size: 14px;
+        // }
     }
+
+}
+
+.contacts__icon {
+    margin-right: 10px;   
+    fill: var(--icon-fill);
+
+}
+
+.contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon {
+    fill: var(--icon-fill);
+    transition: fill var(--transition);
+
+    &:hover,
+    &:focus {
+        fill: var(--primery-white-color)
+    }
+
+}
+
+.nav__container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100px 2fr 1fr;
+    align-items: center;
+
+}
+
+
+.nav__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
 
 }
