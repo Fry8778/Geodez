@@ -1,7 +1,7 @@
 .logo {   
     padding-top: 26px;
-    padding-bottom: 26px;
-
+    padding-bottom: 26px; 
+    
     font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 28px;
@@ -24,6 +24,7 @@
 
 .logo-down {
     display: flex;
+  
     margin-bottom: 20px;
     // padding: 10px 20px;
     font-family: var(--secondary-font-family);
@@ -33,6 +34,11 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--accent-color);
+
+    @media screen and (max-width:767px) {
+        align-items: center;
+        justify-content: center;
+      }
 }
 
 .down-white {

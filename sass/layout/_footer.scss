@@ -87,6 +87,7 @@
   padding-bottom: 60px;
   // margin-left: auto;
   background-color: var(--foter-background-color);
+
 }
 
 .footer-address {
@@ -108,6 +109,15 @@
 
 
 .bottom {
+  display: grid;
+  
+
+  @media screen and (max-width:767px) {
+    align-items: center;
+    justify-items: center;
+  }
+
+  
   .link__footer {
     font-style: normal;
     font-weight: 400;
@@ -145,8 +155,16 @@
 
 .footer__container {
   display: grid;
-  // grid-template-columns: 200px 350px 300px 300px;
-  grid-template-columns: 1fr 1.5fr 1fr 1fr;
+  max-height: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  // grid-template-columns: 1fr 1.5fr 1fr 1fr;/
+  grid-gap: 25px;
+
+
+  @media screen and (max-width:767px) {
+    align-items: center;
+    justify-items: center;
+  }
 }
 
 .footer__item {
@@ -170,6 +188,11 @@
   display: flex;
   justify-content: start;
   align-items: center;
+
+  @media screen and (max-width:767px) {
+    align-items: center;
+    justify-content: center;
+  }
 
 
   // display: grid;
@@ -243,6 +266,13 @@
   color: var(--transparent-color);
   transition: color var(--transition);
 
+  
+  @media screen and (max-width:767px) {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
 }
 
 .slogan__text {
@@ -259,4 +289,12 @@
     margin-bottom: 10px;
 
   }
+
+
+  @media screen and (max-width:767px) {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+ 
 }
