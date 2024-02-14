@@ -1,4 +1,4 @@
-.projects{
+.projects {
     // display: grid;   
     width: 100%;
     padding-top: 60px;
@@ -7,7 +7,7 @@
     background-color: var(--background-color);
 }
 
-.projects__list {   
+.projects__list {
 
     @include mq(tab) {
         --card-item: 2;
@@ -24,34 +24,67 @@
 
 .projects__text {
     display: flex;
-
-    opacity: 0;
+    opacity: 1;
     justify-content: center;
     align-items: center;
 
     width: 100%;
-    height: 100%;
+    // height: 100%;
+    height: 100px;
     padding: 10px;
-    top: 0;
-    left: 0;
+
+    bottom: 0;
+    // top: 0;
+    // left: 0;
     background-color: var(--portfolio-txt-background-color);
     color: var(--primery-white-color);
 
 
-    position: absolute;
-    overflow: auto;
-    transform: translateY(100%);
-    transition: transform var(--transition), opacity var(--transition), box-shadow var(--transition);
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        height: 120px;
+
+
+    }
+
+    @media screen and (min-width:1200px) {
+        height: 150px;
+
+
+    }
+
+
+    @media screen and (min-width:1199px) {
+        opacity: 0;
+        position: absolute;
+        overflow: auto;
+        transform: translateY(100%);
+        transition: transform var(--transition), opacity var(--transition), box-shadow var(--transition);
+
+    }
+
+
 }
 
 
 .projects__text p {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: var(--primery-white-color);
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        font-size: 16px;
+
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 18px;
+
+    }
+
 }
+
 
 .projects__link {
     display: flex;
@@ -110,7 +143,7 @@
 
 
 
-.main__projects__title{
+.main__projects__title {
     display: flex;
     align-items: center;
     justify-content: center;
