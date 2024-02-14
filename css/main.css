@@ -724,11 +724,13 @@ td {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .projects__text {
     height: 120px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .projects__text {
     height: 150px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1199px) {
