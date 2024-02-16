@@ -243,28 +243,42 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   grid-gap: 25px;
 }
+@media screen and (max-width: 1199px) {
+  .about__us {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .geodesy__KFS {
   display: grid;
-  grid-column: 1/2;
-  grid-row: 1/2;
+  width: 100%;
+  height: auto;
 }
 
 .about__us__title {
+  display: grid;
+  padding: 0 15px;
+  align-items: start;
+  justify-items: start;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  display: grid;
-  padding: 0 15px;
-  align-self: start;
-  justify-self: start;
+}
+@media screen and (max-width: 1199px) {
+  .about__us__title {
+    align-items: center;
+    justify-items: center;
+  }
 }
 
 .about__us__text {
-  padding: 15px 15px;
+  display: grid;
+  padding: 0 15px;
+  align-items: stretch;
+  justify-items: stretch;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.71;
@@ -310,7 +324,7 @@ a {
 }
 
 .features__title {
-  align-self: center;
+  align-self: start;
   justify-self: center;
   margin-bottom: 10px;
   font-weight: 700;
@@ -527,37 +541,38 @@ a {
 }
 
 .hero {
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   margin: 0 auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-377.jpg");
+  background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-480.png");
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-550.jpg");
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-420.jpg");
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-768.png");
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-750.jpg");
-  }
-}
-@media screen and (max-width: 1199px) {
-  .hero {
-    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-1100.jpg");
+    padding-top: 120px;
+    padding-bottom: 120px;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-1536.png");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-1792.jpg");
+    padding-top: 250px;
+    padding-bottom: 250px;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-2200.png");
   }
 }
 
@@ -588,12 +603,31 @@ a {
 .services {
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 1600px;
   margin: 0 auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img6.png");
+  background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/serv-480.png");
+}
+@media screen and (min-width: 767px) {
+  .services {
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/serv-768.png");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .services {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/serv-1536.png");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/serv-2200.png");
+  }
 }
 
 .services__container {

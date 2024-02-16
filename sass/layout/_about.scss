@@ -1,11 +1,11 @@
-.about {   
-    display: grid;   
+.about {
+    display: grid;
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     margin-left: auto;
     // background-color: var(--background-color);
-    
+
 
 }
 
@@ -13,7 +13,7 @@
 //     display: grid;
 //     grid-template-columns: 250px 1fr;
 //     grid-column-gap: 50px;
- 
+
 // }
 
 .about__us {
@@ -24,32 +24,69 @@
     max-height: 100%;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     grid-gap: 25px;
-}
-.geodesy__KFS {
-    display: grid;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+
+    @media screen and (max-width:1199px) {
+        grid-template-columns:repeat(1 , 1fr);
+
+    }
 }
 
-.about__us__title {
+.geodesy__KFS {
+
+    display: grid;
+    // grid-column: 1 / 2;
+    // grid-row: 1 / 2;
+
+
+    // display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.about__us__title {    
+    display: grid;
+    padding: 0 15px;
+    align-items: start;
+    justify-items: start;
+    
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 22px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-
-    display: grid;  
-    padding: 0 15px;
-    align-self: start;
-    justify-self: start;
+    
+    @media screen and (max-width:1199px) {
+        align-items: center;
+        justify-items: center;
+        
+    }
 }
 
-.about__us__text {  
-    padding: 15px 15px;
+.about__us__text {
+    display: grid;
+    padding: 0 15px;
+    // align-self: center;
+    // justify-self: center;
+    // justify-content: center;
+    // justify-content: space-around;
+    // justify-content: center;
+    // align-content: center;
+    align-items: stretch;
+    justify-items: stretch;
+
+
+
+    
+    // padding: 15px 15px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primery-text-color);
+}
+
+.about__us__wrapper{
+    // display: grid;
 }

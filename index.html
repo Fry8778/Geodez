@@ -59,10 +59,10 @@
                         </svg>den@klinch.ua</a>
                 </li>
                 <li class="contacts__item">
-                    <a href="tel.+380663790565" class="contacts__link__top">
+                    <a href="tel:+380663790565" class="contacts__link__top">
                         <svg class="contacts__icon" width="10" height="16">
                             <use href="./images/sprite.svg#icon-smartphone"></use>
-                        </svg>+38(066) 379 05 65</a>
+                        </svg>+38 066 379 05 65</a>
                 </li>
             </ul>
         </div>
@@ -79,26 +79,17 @@
         </section>
         <!-- About us -->
         <section class="about">
-            <div class="container about_company">
-                <div class="about__us">
-                    <div class="about__us_wrapper">
-                        <picture class="geodesy__KFS">
-                            <source srcset="
-                            ./images/about_us-desk1x.jpg 1x,
-                            ./images/about_us-desk2x.jpg 2x
-                        " media="(min-width:1200px)" type="image/jpeg" />
-                            <source srcset="
-                            ./images/about_us-desk1x.jpg 1x,
-                            ./images/about_us-desk2x.jpg 2x
-                        " media="(min-width:768px)" type="image/jpeg" />
-                            <source srcset="
-                            ./images/about_us-desk1x.jpg 1x,
-                            ./images/about_us-desk2x.jpg 2x
-                            " media="(min-width767px)" type="image/jpeg" />
-                            <img src="./images/about_us-desk1x.jpg" alt="Geodesy at KFS" width="370" height="294" />
-                        </picture>
-                    </div>
-                    <div class="about__us_wrapper" id="About-us">
+            <div class="container about_company" id="About-us">
+                <ul class="about__us">
+                    <li class="about__us__wrapper">
+                        <img srcset="./images/kfc-244.jpg 244w,
+                                ./images/kfc-486.jpg 486w,
+                                ./images/kfc-730.jpg 730w,
+                                ./images/kfc-1120.jpg 1120w"
+                            size="(min-width:1200px) 730px, (min-width:786px) 244px, (min-width:480px) 244px, (max-width:480px) 100vw"
+                            src="./images/kfc-244.jpg" alt="Geodesy at KFS" />
+                    </li>
+                    <li class="about__us__wrapper">
                         <h2 class="section-title about__us__title">Про нашу компанію</h2>
                         <p class=" about__us__text">
                             Команда нашої компанії успішно реалізувала понад 1000 проектів у всіх куточках України. Наша
@@ -120,8 +111,8 @@
                             рівень
                             професійних послуг та сприяючи успішному втіленню проектів клієнтів.
                         </p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- Features -->
@@ -148,7 +139,7 @@
                         <h3 class="features__title">Сучасне обладнання</h3>
                         <p class="features__text">Наша компанія інвестує в сучасне топографічне та геологічне
                             обладнання, що
-                            дозволяє забезпечити найточніші вимірювання та високоякісні дослідження. Ми використовуємо
+                            дозволяє забезпечити найточніші вимірювання та високоякісні дослідження в стислі терміни. Ми використовуємо
                             передові
                             технології для забезпечення точності та ефективності усіх проектів.</p>
                     </li>
@@ -157,7 +148,7 @@
                             <use href="./images/sprite.svg#icon-meeting"></use>
                         </svg>
                         <h3 class="features__title">Індивідуальний підхід</h3>
-                        <p class="features__text">Ми розуміємо, що кожен проект унікальний. Наші фахівці працюють з
+                        <p class="features__text">Ми розуміємо, що кожен проект важливий та унікальний. Наші фахівці працюють з
                             клієнтами,
                             враховуючи їхні потреби та особливості проекту. Ми пропонуємо індивідуальні рішення, які
                             відповідають конкретним вимогам та гарантують успішне виконання завдань.</p>
@@ -168,9 +159,9 @@
                         </svg>
                         <h3 class="features__title">Гарантія якості</h3>
                         <p class="features__text">
-                            Наша компанія надає повну гарантію якості на всі виконані роботи. Ми пильно стежимо за
-                            кожним етапом проєкту, щоб забезпечити відмінні результати та задовільнити клієнтів надавши
-                            відчуття спокою та впевненості в надійності наших послуг.</p>
+                            Наша компанія надає повну гарантію якості на виконані роботи. Використовуючи інноваційні
+                            рішення ми пильно стежимо за кожним етапом проєкту, щоб забезпечити відмінні результати та
+                            задовільнити клієнтів надавши відчуття спокою та впевненості в надійності наших послуг.</p>
                     </li>
                 </ul>
             </div>
@@ -235,7 +226,7 @@
                                 ./images/amazon-486.jpg 486w,
                                 ./images/amazon-730.jpg 730w,
                                 ./images/amazon-1120.jpg 1120w"
-                                    size="(min-width:1366px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
+                                    size="(min-width:1200px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
                                     src="./images/amazon-244.jpg" alt="Total station Amazon" />
                                 <div class="projects__text">
                                     <p>
@@ -261,7 +252,7 @@
                                 ./images/Building-486.jpg 486w,
                                 ./images/Building-730.jpg 730w,
                                 ./images/Building-1120.jpg 1120w"
-                                    size="(min-width:1366px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
+                                    size="(min-width:1200px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
                                     src="./images/Building-244.jpg"
                                     alt="Total station against the background of a building" />
                                 <div class="projects__text">
@@ -288,7 +279,7 @@
                                 ./images/Eco-486.jpg 486w,
                                 ./images/Eco-730.jpg 730w,
                                 ./images/Eco-1120.jpg 1120w"
-                                    size="(min-width:1366px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
+                                    size="(min-width:1200px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
                                     src="./images/Eco-244.jpg" alt="Solar panel" />
                                 <div class="projects__text">
                                     <p>
@@ -314,7 +305,7 @@
                                 ./images/factory-486.jpg 486w,
                                 ./images/factory-730.jpg 730w,
                                 ./images/factory-1120.jpg 1120w"
-                                    size="(min-width:1366px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
+                                    size="(min-width:1200px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
                                     src="./images/factory-244.jpg" alt="Conveyor on the factory" />
                                 <div class="projects__text">
                                     <p>
@@ -340,7 +331,7 @@
                                 ./images/field-486.jpg 486w,
                                 ./images/field-730.jpg 730w,
                                 ./images/field-1120.jpg 1120w"
-                                    size="(min-width:1366px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
+                                    size="(min-width:1200px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
                                     src="./images/field-244.jpg" alt="Field" />
                                 <div class="projects__text">
                                     <p>
@@ -365,7 +356,7 @@
                                 ./images/opera-486.jpg 486w,
                                 ./images/opera-730.jpg 730w,
                                 ./images/opera-1120.jpg 1120w"
-                                    size="(min-width:1366px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
+                                    size="(min-width:1200px) 730px, (min-width:786px) 486px, (min-width:480px) 244px, (max-width:480px) 100vw"
                                     src="./images/opera-244.jpg" alt="Fittings" />
                                 <div class="projects__text">
                                     <p>
@@ -407,7 +398,7 @@
                             <a href="mailto:den@klinch.ua" class="link__footer">den@klinch.ua</a>
                         </li>
                         <li class="bottom-box">
-                            <a href="tel.+380663790565" class="link__footer">+38 066 379 05 65</a>
+                            <a href="tel:+380663790565" class="link__footer">+38 066 379 05 65</a>
                         </li>
                     </ul>
                 </address>
@@ -429,7 +420,8 @@
                 <p class="footer-text join-up">ПРИСОЕДИНЯЙТЕСЬ</p>
                 <ul class="social-media">
                     <li class="social-item">
-                        <a href="@" class="social-link"><svg class="icon-foot" width="20" height="20">
+                        <a href="https://www.instagram.com/geodez_one/" class="social-link"><svg class="icon-foot"
+                                width="20" height="20">
                                 <use href="./images/sprite.svg#icon-instagram"></use>
                             </svg></a>
                     </li>
