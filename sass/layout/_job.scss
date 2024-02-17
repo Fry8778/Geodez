@@ -1,0 +1,329 @@
+// .job__container {
+//     @media screen and (max-width: 1200px) {
+//         max-width: 1190px;
+//     }
+
+//    
+
+// }
+
+
+
+.job__container {
+
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    // @media screen and (min-width: 1200px) {
+    //     max-width: 1170px;
+
+    // }
+
+
+    // @media screen and (max-width: 992px) {
+    //     max-width: 970px;
+    // }
+
+
+    // @media screen and (max-width: 768px) {
+    //     max-width: 750px;
+    // }
+
+
+}
+
+
+/* Медіа-запит для екранів шириною більше 768px */
+// @media screen and (min-width: 768px) and (max-width:1199) {
+//     .job__item {
+//         max-width: 20%; /* Максимальна ширина елемента на планшетах і більших пристроях */
+//     }
+// }
+
+// /* Медіа-запит для екранів шириною більше 992px */
+// @media screen and (max-width: 1200px) {
+//     .job__item {
+//         max-width: 100%; /* Максимальна ширина елемента на широких екранах */
+//     }
+// }
+
+
+// .job__list{
+//     // display: block;
+//     width: 100%;
+//     height: auto;
+
+//     @media screen and (min-width:768px) and (max-width:1199px){
+//         width: 50%;
+//         margin: 0 auto;
+//     }
+// }
+// .job__list {
+//     display: block;
+//     width: 100%;
+//     height: auto;
+
+//     @media screen and (min-width:768px) and (max-width:1199px) {
+//         max-width: 750px;
+//         margin: 0 auto;
+//     }
+// }
+
+
+.job {
+    // display: grid;
+    height: auto;   
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    // background-color: var(--background-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-image: linear-gradient(to right,
+    //         rgba(70, 82, 90, 0.4),
+    //         rgba(70, 82, 90, 0.4)),
+    // background-image: linear-gradient(to right,
+    //         rgba(70, 82, 90, 0.8),
+    //         rgba(70, 82, 90, 0.8),
+    //         rgba(0, 0, 255, 0.1)),
+    //     url("../images/img5.jpg");
+
+
+    // background: gradient(rgba(70, 82, 90, 0.8),
+    //             rgba(0, 0, 255, 0.4)),
+    //              url("../images/img5.jpg") no-repeat;
+
+
+    // background: linear-gradient(to right, rgba(0, 0, 255, 0.4),
+    //         rgba(0, 0, 255, 0.4)),
+    //     linear-gradient(to right,
+    //         rgba(70, 82, 90, 0.4),
+    //         rgba(70, 82, 90, 0.4)),
+    //     url("../images/img1.jpg");
+
+    background-image: linear-gradient(to right,
+            rgba(255, 255, 0, 0.1),
+            rgba(255, 255, 0, 0.1)),
+        linear-gradient(to right,
+            rgba(10, 37, 61, 0.9),
+            rgba(10, 37, 61, 0.9)),
+        url("../images/img7.jpg");
+
+
+    // @media (max-width: 767px) {
+    //     height: auto;
+    //     margin-bottom: 50px;
+    // }
+    @media screen and (min-width: 1200px) {
+        height: 500px;
+    }
+     
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.job_wrapper {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+.how__job__title {
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primery-white-color);
+
+}
+
+.job__list {
+    // display: grid;   
+    // max-height: 100%;
+    // grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    // grid-gap: 25px;
+
+
+
+    // position: relative;
+    display: flex;
+    justify-content: flex-start;
+    // align-items: center;
+    align-content: center;
+
+    // flex-wrap: wrap;
+    flex-wrap: nowrap;
+
+    @media screen and (max-width:1199px) {
+        display: block;
+    }
+
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+       margin-left: 20px;
+    }
+
+    @media screen and (max-width:480px) {
+        margin-left: 5px;
+    }
+
+
+}
+
+.job__item {
+    // display: grid;
+    // color: #b9b9b9;
+    // align-self: stretch;
+    // justify-self: stretch;
+    // background-color: #fff;
+    // box-shadow: 0 8px 26px rgba(0, 0, 0, .1);
+    // padding: 30px 20px;
+    // transition: all .25s linear;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    border-bottom: 2px solid var(--primery-white-color);
+    min-height: 106px;
+    margin-bottom: 34px;
+    // padding-left: 10px;
+    padding-bottom: 18px;
+    position: relative;
+
+
+}
+
+// .job__item:nth-child(2n+1):not(:last-child) {
+//     width: calc(65% - 10px);
+// }
+
+// .job__item:nth-child(2n) {
+//     width: calc(35% - 10px);
+// }
+
+
+
+
+
+// .job__item:nth-child(2):before {
+//     content: "";
+//     width: 91px;
+//     height: 142px;
+//     position: absolute;
+//     right: -73px;
+//     top: 100%;
+//     // background-image: url("../../images/job-semicircle.png");
+// }
+
+// .job__item:nth-child(5):before {
+//     content: "";
+//     width: 91px;
+//     height: 142px;
+//     position: absolute;
+//     left: -73px;
+//     top: -36px;
+//     // transform: rotate(-180deg);
+//     // background-image: url("../images/job-semicircle.png");
+// }
+
+
+
+
+
+
+.job__title {
+    // align-self: start;
+    // justify-self: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--primery-white-color);
+
+    // color: #ffffff;
+    // font-family: 'Montserrat', sans-serif;
+    // font-size: 16px;
+    // font-weight: 700;
+    // line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+
+}
+
+.job__text {
+    // align-self: center;
+    // justify-self: center;
+    // margin-left: 20px;
+    // padding: 15px 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primery-white-color);
+
+    // color: #ffffff;
+    // font-size: 12px;
+    // font-weight: 400;
+    // line-height: 14px;
+
+
+}
+
+.job__number {
+    // font-weight: 400;
+    // font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primery-white-color);
+    border-radius: 50%;
+    background-color: var(--accent-color);
+
+
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    // line-height: 16px;
+    position: absolute;
+    left: 0px;
+    bottom: -15px;
+    z-index: 2;
+}
+
+// .number__five {
+
+//     @media screen and (min-width:768px) {
+//         position: absolute;
+//         left: 270px;
+
+//     }
+// }
+
+.icon-job {
+    width: 50px;
+    height: 50px;
+    display: block;
+    fill: var(--primery-white-color);
+}

@@ -31,31 +31,29 @@
     }
 }
 
-.geodesy__KFS {
+.geodesy__kfc {
 
-    display: grid;
+    // display: grid;
     // grid-column: 1 / 2;
     // grid-row: 1 / 2;
 
 
-    // display: block;
+    display: block;
     width: 100%;
     height: auto;
+
+    @media screen and (min-width:768px) and (max-width:1199px){
+        width: 70%;
+        margin: 0 auto;
+    }
+
 
 }
 
 .about__us__title {    
-    display: grid;
-    padding: 0 15px;
+    display: grid;  
     align-items: start;
-    justify-items: start;
-    
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
+    justify-items: start;   
     
     @media screen and (max-width:1199px) {
         align-items: center;

@@ -80,14 +80,14 @@
         <!-- About us -->
         <section class="about">
             <div class="container about_company" id="About-us">
-                <ul class="about__us">
+                <ul class="about__us ">
                     <li class="about__us__wrapper">
-                        <img srcset="./images/kfc-244.jpg 244w,
+                        <img class="geodesy__kfc" srcset="./images/kfc-244.jpg 244w,
                                 ./images/kfc-486.jpg 486w,
                                 ./images/kfc-730.jpg 730w,
                                 ./images/kfc-1120.jpg 1120w"
                             size="(min-width:1200px) 730px, (min-width:786px) 244px, (min-width:480px) 244px, (max-width:480px) 100vw"
-                            src="./images/kfc-244.jpg" alt="Geodesy at KFS" />
+                            src="./images/kfc-244.jpg" alt="Geodesy at KFC" />
                     </li>
                     <li class="about__us__wrapper">
                         <h2 class="section-title about__us__title">Про нашу компанію</h2>
@@ -120,7 +120,7 @@
             <div class="container features__container" id="Geodesy-our-features">
                 <h2 class="section-title primary__features">Наші переваги</h2>
                 <ul class="features__list">
-                    <li class="card_item features__item">
+                    <li class="features__item">
                         <svg class="features__icon" width="55" height="55">
                             <use href="./images/sprite.svg#icon-construction"></use>
                         </svg>
@@ -132,28 +132,30 @@
                             результати
                             робіт. Ми впевнені в якості наших послуг, що завжди відповідає найвищим стандартам.</p>
                     </li>
-                    <li class="card_item features__item">
+                    <li class="features__item">
                         <svg class="features__icon" width="55" height="55">
                             <use href="./images/sprite.svg#icon-land-surveyor"></use>
                         </svg>
                         <h3 class="features__title">Сучасне обладнання</h3>
                         <p class="features__text">Наша компанія інвестує в сучасне топографічне та геологічне
                             обладнання, що
-                            дозволяє забезпечити найточніші вимірювання та високоякісні дослідження в стислі терміни. Ми використовуємо
+                            дозволяє забезпечити найточніші вимірювання та високоякісні дослідження в стислі терміни. Ми
+                            використовуємо
                             передові
                             технології для забезпечення точності та ефективності усіх проектів.</p>
                     </li>
-                    <li class="card_item features__item">
+                    <li class="features__item">
                         <svg class="features__icon" width="60" height="60">
                             <use href="./images/sprite.svg#icon-meeting"></use>
                         </svg>
                         <h3 class="features__title">Індивідуальний підхід</h3>
-                        <p class="features__text">Ми розуміємо, що кожен проект важливий та унікальний. Наші фахівці працюють з
+                        <p class="features__text">Ми розуміємо, що кожен проект важливий та унікальний. Наші фахівці
+                            працюють з
                             клієнтами,
                             враховуючи їхні потреби та особливості проекту. Ми пропонуємо індивідуальні рішення, які
                             відповідають конкретним вимогам та гарантують успішне виконання завдань.</p>
                     </li>
-                    <li class="card_item features__item">
+                    <li class="features__item">
                         <svg class="features__icon" width="55" height="55">
                             <use href="./images/sprite.svg#icon-quality"></use>
                         </svg>
@@ -167,52 +169,73 @@
             </div>
         </section>
         <!-- Services -->
-        <section class="services">
-            <div class="container services__container" id="Geodesy-our-services">
-                <h2 class="section-title services__title">Послуги та прайс</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Геодезичні та геологічні роботи</th>
-                            <th>Ціна (грн)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Розбивка осей будівлі</th>
-                            <td>1600</td>
-                        </tr>
-                        <tr>
-                            <th>Винесення кордонів земельної ділянки</th>
-                            <td>1500</td>
-                        </tr>
-                        <tr>
-                            <th>Топозйомка 1:500</th>
-                            <td>2000</td>
-                        </tr>
-                        <tr>
-                            <th>1 ГА топозйомка 1:500 (не забудована) </th>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <th>1 ГА топозйомка 1:500 (промислова зона)</th>
-                            <td>4500</td>
-                        </tr>
-                        <tr>
-                            <th>1 км топозйомка для лінійних споруд</th>
-                            <td>4000</td>
-                        </tr>
-                        <tr>
-                            <th>Геологія ділянки під розміщення приватного житлового будинку</th>
-                            <td>від 5000</td>
-                        </tr>
-                        <tr>
-                            <th>Геологія ділянки промислового призначення</th>
-                            <td>від 10000</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+        <section class="job">
+            <div class="container job__container">
+                <h2 class="section-title how__job__title">Як ми працюємо</h2>
+                <ul class="job__list">
+                    <li class="job__item">
+                        <svg class="icon-job" width="50" height="50">
+                            <use href="./images/sprite.svg#icon-call"></use>
+                        </svg>
+                        <div class="job_wrapper">
+                            <h2 class="job__title">Етап замовлення</h2>
+                            <p class="job__text">Приймаємо дзвінок клієнта.<br />
+                                Учочнюємо деталі замовлення.<br />
+                                Визначаємо ціну.</p>
+                        </div>
+                        <p class="job__number">1</p>
+                    </li>
+                    <li class="job__item">
+                        <svg class="icon-job" width="50" height="50">
+                            <use href="./images/sprite.svg#icon-surveying"></use>
+                        </svg>
+                        <div class="job_wrapper">
+                            <h2 class="job__title">Етап польовий</h2>
+                            <p class="job__text">
+                                Проведення геодезичних вимірюваннь або<br/>
+                                буріння та відбір зразків.<br />
+                                Отримання передплати. </p>
+                        </div>
+                        <p class="job__number">2</p>
+                    </li>
+                    <li class="job__item">
+                        <svg class="icon-job" width="50" height="50">
+                            <use href="./images/sprite.svg#icon-laboratory"></use>
+                        </svg>
+                        <div class="job_wrapper">
+                            <h2 class="job__title">Етап лабораторний</h2>
+                            <p class="job__text">Аналіз отриманих геодезичних вимірювань.<br />
+                                Проведення лабораторних досліджень зразків. </p>
+                        </div>
+                        <p class="job__number">3</p>
+                    </li>
+                    <li class="job__item">
+                        <svg class="icon-job" width="50" height="50">
+                            <use href="./images/sprite.svg#icon-contract"></use>
+                        </svg>
+                        <div class="job_wrapper">
+                            <h2 class="job__title">Етап камеральний</h2>
+                            <p class="job__text">Розробка геодезичного звіту<br />
+                                або технічний звіту з геологічних розвідок. </p>
+                        </div>
+                        <p class="job__number">4</p>
+
+                    </li>                   
+                    <li class="job__item">
+                        <svg class="icon-job" width="50" height="50">
+                            <use href="./images/sprite.svg#icon-paper"></use>
+                        </svg>
+                        <div class="job_wrapper">
+                            <h2 class="job__title">Етап звіту</h2>
+                            <p class="job__text">Передача матеріалів клієнту.<br />
+                                Отримання кінцевої суми оплати. </p>
+                        </div>
+                        <p class="job__number number__five">5</p>
+                    </li>
+                </ul>
             </div>
+
         </section>
         <!-- Projects -->
         <section class="projects">
@@ -373,6 +396,53 @@
                 </ul>
             </div>
         </section>
+        <section class="services">
+            <div class="container services__container" id="Geodesy-our-services">
+                <h2 class="section-title services__title">Послуги та прайс</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Геодезичні та геологічні роботи</th>
+                            <th>Ціна (грн)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Розбивка осей будівлі</th>
+                            <td>1600</td>
+                        </tr>
+                        <tr>
+                            <th>Винесення кордонів земельної ділянки</th>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <th>Топозйомка 1:500</th>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <th>1 ГА топозйомка 1:500 (не забудована) </th>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <th>1 ГА топозйомка 1:500 (промислова зона)</th>
+                            <td>4500</td>
+                        </tr>
+                        <tr>
+                            <th>1 км топозйомка для лінійних споруд</th>
+                            <td>4000</td>
+                        </tr>
+                        <tr>
+                            <th>Геологія ділянки під розміщення приватного житлового будинку</th>
+                            <td>від 5000</td>
+                        </tr>
+                        <tr>
+                            <th>Геологія ділянки промислового призначення</th>
+                            <td>від 10000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
     </main>
 
@@ -417,7 +487,7 @@
                 </ul>
             </div>
             <div class="footer-item join">
-                <p class="footer-text join-up">ПРИСОЕДИНЯЙТЕСЬ</p>
+                <p class="footer-text join-up">ДОЛУЧАЙТЕСЬ</p>
                 <ul class="social-media">
                     <li class="social-item">
                         <a href="https://www.instagram.com/geodez_one/" class="social-link"><svg class="icon-foot"
@@ -426,7 +496,8 @@
                             </svg></a>
                     </li>
                     <li class="social-item">
-                        <a href="@" class="social-link"><svg class="icon-foot" width="20" height="20">
+                        <a href="https://t.me/d_kulinich" class="social-link"><svg class="icon-foot" width="20"
+                                height="20">
                                 <use href="./images/sprite.svg#icon-telegram"></use>
                             </svg></a>
                     </li>
