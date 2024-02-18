@@ -1,20 +1,20 @@
 .projects {
-    // display: grid;   
+  
     width: 100%;
     padding-top: 60px;
-    padding-bottom: 60px;
-    // margin-left: auto;
+    padding-bottom: 60px; 
     background-color: var(--background-color);
 }
 
 .projects__list {
-
-    @include mq(tab) {
+    @media screen and (min-width:768px) {
         --card-item: 2;
+        
     }
 
-    @include mq(desk) {
+    @media screen and (min-width:1200px) {
         --card-item: 3;
+        
     }
 
 }
@@ -29,31 +29,25 @@
     align-items: center;
 
     width: 100%;
-    // height: 100%;
     height: 100px;
     padding: 10px;
 
-    bottom: 0;
-    // top: 0;
-    // left: 0;
+    bottom: 0;  
     background-color: var(--portfolio-txt-background-color);
     color: var(--primery-white-color);
 
 
     @media screen and (min-width:480px) and (max-width:1199px) {
         height: 120px;
-        width: 100%;
-        
-        
+        width: 100%;   
+
     }
     
     @media screen and (min-width:1200px) {
         height: 150px;
         width: 100%;
 
-
     }
-
 
     @media screen and (min-width:1199px) {
         opacity: 0;
@@ -63,7 +57,6 @@
         transition: transform var(--transition), opacity var(--transition), box-shadow var(--transition);
 
     }
-
 
 }
 
@@ -108,13 +101,10 @@
 
 }
 
-
-
 .projects__wrapper {
     position: relative;
     overflow: hidden;
 }
-
 
 .projects__card {
     flex-grow: 1;
@@ -124,7 +114,6 @@
     border-left: 1px solid var(--staff-color);
 
 }
-
 
 .projects__title {
     font-weight: 700;

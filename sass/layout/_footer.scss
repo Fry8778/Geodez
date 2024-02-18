@@ -13,11 +13,8 @@
 }
 
 .footer {
-  // display: grid;
   width: 100%;
   padding-top: 60px;
-  // padding-bottom: 60px;
-  // margin-left: auto;
   background-color: var(--foter-background-color);
 
 }
@@ -110,7 +107,7 @@
 }
 
 
-.social-link { 
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,7 +172,6 @@
 
   }
 
-
   @media screen and (max-width:767px) {
     display: grid;
     align-items: center;
@@ -184,10 +180,6 @@
 
 }
 
-
-
-
-
 .footer-reserved {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -195,13 +187,10 @@
 
 }
 
-
-
 .footer-comment {
   font-weight: 500;
   font-size: 12px;
   line-height: 2;
   color: var(--header-border-color);
-  text-align: center;  
+  text-align: center;
 }
-
