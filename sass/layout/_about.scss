@@ -21,13 +21,13 @@
 }
 
 .geodesy__kfc { 
-    display: block;
-    width: 100%;
-    height: auto;
-
-    @media screen and (min-width:768px) and (max-width:1199px) {
-        width: 70%;
-        margin: 0 auto;
+    display: grid;
+    width: 70%;
+    height: auto;       
+    margin: 0 auto;
+    
+    @media screen and (min-width:1200px) {
+        width: 100%;       
     }
 
 

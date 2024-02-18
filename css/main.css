@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   letter-spacing: 0.03em;
@@ -250,14 +251,14 @@ a {
 }
 
 .geodesy__kfc {
-  display: block;
-  width: 100%;
+  display: grid;
+  width: 70%;
   height: auto;
+  margin: 0 auto;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .geodesy__kfc {
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -547,21 +548,26 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-480.png");
+  /* Для екранів Retina з роздільною здатністю 2x і розширенням 800px */
+  /* Для екранів шириною більше 768px */
+  /* Для екранів Retina з роздільною здатністю 2x і розширенням 1536px */
+  /* Для екранів шириною більше 1200px */
+  /* Для екранів Retina з роздільною здатністю 2x і розширенням 2200px */
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-800.png");
+  }
+}
+@media screen and (min-width: 768px) {
   .hero {
     padding-top: 120px;
     padding-bottom: 120px;
-    margin: 0 auto;
     background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-768.png");
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px) and (max-width: 1199px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (min-width: 769px) and (max-width: 1199px) {
   .hero {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    max-width: 1600px;
-    margin: 0 auto;
     background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-1536.png");
   }
 }
@@ -570,7 +576,11 @@ a {
     padding-top: 250px;
     padding-bottom: 250px;
     max-width: 1600px;
-    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-1600.png");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+  .hero {
     background-image: linear-gradient(to right, rgba(70, 82, 90, 0.4), rgba(70, 82, 90, 0.4)), url("../images/hero-2200.png");
   }
 }
@@ -825,10 +835,32 @@ td {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1)), linear-gradient(to right, rgba(10, 37, 61, 0.9), rgba(10, 37, 61, 0.9)), url("../images/grass-800.jpg");
-  background-image: linear-gradient(to right, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1)), linear-gradient(to right, rgba(10, 37, 61, 0.9), rgba(10, 37, 61, 0.9)), url("../images/grass-768.jpg");
-  background-image: linear-gradient(to right, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1)), linear-gradient(to right, rgba(10, 37, 61, 0.9), rgba(10, 37, 61, 0.9)), url("../images/grass-1536.jpg");
-  background-image: linear-gradient(to right, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1)), linear-gradient(to right, rgba(10, 37, 61, 0.9), rgba(10, 37, 61, 0.9)), url("../images/grass-2200.jpg");
+  background-image: linear-gradient(to right, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1)), linear-gradient(to right, rgba(10, 37, 61, 0.9), rgba(10, 37, 61, 0.9)), url("../images/grass-480.jpg");
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 481px) and (max-width: 768px) {
+  .job {
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1)), linear-gradient(to right, rgba(10, 37, 61, 0.9), rgba(10, 37, 61, 0.9)), url("../images/grass-800.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .job {
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1)), linear-gradient(to right, rgba(10, 37, 61, 0.9), rgba(10, 37, 61, 0.9)), url("../images/grass-768.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px) and (max-width: 1199px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (min-width: 769px) and (max-width: 1199px) {
+  .job {
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1)), linear-gradient(to right, rgba(10, 37, 61, 0.9), rgba(10, 37, 61, 0.9)), url("../images/grass-1536.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .job {
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1)), linear-gradient(to right, rgba(10, 37, 61, 0.9), rgba(10, 37, 61, 0.9)), url("../images/grass-1600.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+  .job {
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1)), linear-gradient(to right, rgba(10, 37, 61, 0.9), rgba(10, 37, 61, 0.9)), url("../images/grass-2200.jpg");
+  }
 }
 @media screen and (min-width: 1200px) {
   .job {

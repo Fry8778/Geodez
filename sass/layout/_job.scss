@@ -1,48 +1,90 @@
-.job {  
-    height: auto;   
+.job {
+    height: auto;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin: 0 auto;   
+    margin: 0 auto;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to right,
+    background-image:
+        linear-gradient(to right,
             rgba(255, 255, 0, 0.1),
             rgba(255, 255, 0, 0.1)),
         linear-gradient(to right,
             rgba(10, 37, 61, 0.9),
             rgba(10, 37, 61, 0.9)),
-        url("../images/grass-800.jpg");
+        url("../images/grass-480.jpg");
 
-    background-image: linear-gradient(to right,
-            rgba(255, 255, 0, 0.1),
-            rgba(255, 255, 0, 0.1)),
-        linear-gradient(to right,
-            rgba(10, 37, 61, 0.9),
-            rgba(10, 37, 61, 0.9)),
-        url("../images/grass-768.jpg");
 
-    background-image: linear-gradient(to right,
-            rgba(255, 255, 0, 0.1),
-            rgba(255, 255, 0, 0.1)),
-        linear-gradient(to right,
-            rgba(10, 37, 61, 0.9),
-            rgba(10, 37, 61, 0.9)),
-        url("../images/grass-1536.jpg");
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 481px) and (max-width: 768px) {
+        background-image:
+            linear-gradient(to right,
+                rgba(255, 255, 0, 0.1),
+                rgba(255, 255, 0, 0.1)),
+            linear-gradient(to right,
+                rgba(10, 37, 61, 0.9),
+                rgba(10, 37, 61, 0.9)),
+            url("../images/grass-800.jpg");
 
-    background-image: linear-gradient(to right,
-            rgba(255, 255, 0, 0.1),
-            rgba(255, 255, 0, 0.1)),
-        linear-gradient(to right,
-            rgba(10, 37, 61, 0.9),
-            rgba(10, 37, 61, 0.9)),
-        url("../images/grass-2200.jpg");
-  
+    }
+
+    @media screen and (min-width:768px) {
+        background-image:
+            linear-gradient(to right,
+                rgba(255, 255, 0, 0.1),
+                rgba(255, 255, 0, 0.1)),
+            linear-gradient(to right,
+                rgba(10, 37, 61, 0.9),
+                rgba(10, 37, 61, 0.9)),
+            url("../images/grass-768.jpg");
+
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 769px) and (max-width: 1199px),
+    screen and (min-resolution: 192dpi) and (min-width: 769px) and (max-width: 1199px) {
+        background-image:
+            linear-gradient(to right,
+                rgba(255, 255, 0, 0.1),
+                rgba(255, 255, 0, 0.1)),
+            linear-gradient(to right,
+                rgba(10, 37, 61, 0.9),
+                rgba(10, 37, 61, 0.9)),
+            url("../images/grass-1536.jpg");
+
+    }
+
+    @media screen and (min-width:1200px) {
+        background-image:
+            linear-gradient(to right,
+                rgba(255, 255, 0, 0.1),
+                rgba(255, 255, 0, 0.1)),
+            linear-gradient(to right,
+                rgba(10, 37, 61, 0.9),
+                rgba(10, 37, 61, 0.9)),
+            url("../images/grass-1600.jpg");
+
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+        background-image:
+            linear-gradient(to right,
+                rgba(255, 255, 0, 0.1),
+                rgba(255, 255, 0, 0.1)),
+            linear-gradient(to right,
+                rgba(10, 37, 61, 0.9),
+                rgba(10, 37, 61, 0.9)),
+            url("../images/grass-2200.jpg");
+
+    }
+
     @media screen and (min-width: 1200px) {
         height: 500px;
-        max-width:1600px;
+        max-width: 1600px;
     }
-     
+
 }
 
 .job_wrapper {
@@ -58,10 +100,10 @@
 
 }
 
-.job__list {  
+.job__list {
     display: flex;
-    justify-content: flex-start;  
-    align-content: center;  
+    justify-content: flex-start;
+    align-content: center;
     flex-wrap: nowrap;
 
     @media screen and (max-width:1199px) {
@@ -69,7 +111,7 @@
     }
 
     @media screen and (min-width:480px) and (max-width:1199px) {
-       margin-left: 20px;
+        margin-left: 20px;
     }
 
     @media screen and (max-width:480px) {
@@ -85,13 +127,13 @@
     align-content: center;
     border-bottom: 2px solid var(--primery-white-color);
     min-height: 100px;
-    margin-bottom: 34px;  
+    margin-bottom: 34px;
     padding-bottom: 18px;
     position: relative;
 
 }
 
-.job__title {   
+.job__title {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 16px;
@@ -103,7 +145,7 @@
 
 }
 
-.job__text {  
+.job__text {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.71;
@@ -112,14 +154,14 @@
 
 }
 
-.job__number {       
+.job__number {
     display: flex;
     width: 30px;
     height: 30px;
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    font-weight: 600; 
+    font-weight: 600;
     position: absolute;
     left: 0px;
     bottom: -15px;
