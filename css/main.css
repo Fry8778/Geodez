@@ -437,6 +437,12 @@ a {
     justify-items: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    max-width: 600px;
+    grid-gap: 50px;
+  }
+}
 
 .footer__item {
   width: 100%;
