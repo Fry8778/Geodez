@@ -539,6 +539,12 @@ a {
   color: var(--header-border-color);
   text-align: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-comment {
+    display: grid;
+    grid-template-columns: 2fr 420px;
+  }
+}
 
 .header {
   align-items: center;
