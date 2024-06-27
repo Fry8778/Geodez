@@ -4,6 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
+    style-src 'self' 'unsafe-inline' *.googleapis.com heapanalytics.com vercel.com *.vercel.com *.vercel.sh vercel.live *.stripe.com twitter.com *.twitter.com *.github.com *.codesandbox.io wss://*.vercel.com localhost:* chrome-extension://* https://www.gstatic.com;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' *.vercel.com *.vercel.sh;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https://www.gstatic.com;
+    connect-src 'self' *.vercel.com;
+    frame-src *.vercel.com;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';    
+    manifest-src 'self';
+    worker-src 'self' blob:;">
     <title>GeoDez</title>
     <link rel="stylesheet" href="./css/modern-normalize/modern-normalize.css">
     <link
