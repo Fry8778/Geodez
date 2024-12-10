@@ -48,5 +48,8 @@
 			"no-descending-specificity": null,
 			"property-no-vendor-prefix": null
 		}
+	},
+	"dependencies": {
+		"modern-normalize": "file:"
 	}
 }
