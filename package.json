@@ -1,6 +1,26 @@
 {
   "dependencies": {
+    "geodez": "file:",
     "jquery": "^3.7.1",
     "modern-normalize": "^2.0.0"
-  }
+  },
+  "name": "geodez",
+  "version": "1.0.0",
+  "description": "Підключено jQuery до проекту через <script src=\"./node_modules/jquery/dist/jquery.min.js\"></script>, але це неправильно! \r Коректно буде підключити jQuery через npm, для цього потрібно правильно налаштувати збірку проекту. Оскільки npm завантажує бібліотеку в node_modules, підключати її напряму через HTML неправильно. Замість цього використаємо JavaScript-збірник, наприклад Webpack.",
+  "main": "snowfallFromMobileToDesktop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fry8778/Geodez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Fry8778/Geodez/issues"
+  },
+  "homepage": "https://github.com/Fry8778/Geodez#readme"
 }
